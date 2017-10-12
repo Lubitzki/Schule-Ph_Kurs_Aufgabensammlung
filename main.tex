@@ -1,0 +1,87 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[ngerman]{babel}
+
+\title{Ph Aufgaben K1}
+\author{Lubitzki }
+\date{May 2014}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\usepackage{siunitx}
+\sisetup{locale = DE}
+
+\usepackage{probsoln}
+
+\renewcommand{\solutionname}{Lösung}
+
+\newproblem[1]{PH_DornBader11_12_S21A1}{
+    Zwischen zwei Kondensatorplatten \dots
+    }
+    {
+    
+        d = \SI{2,0e-2}{m}
+        
+        \( E = \frac{U}{d} 
+        = \frac{1000 V}{\SI{2,0e-2}{m}} = \SI{5,0e4}{\volt\per\meter} \)
+        
+        \( F = q \cdot E = \SI{1,0e-8}{\coulomb} \cdot \SI{5,0e4}{\newton\per\coulomb}
+        = \SI{5,0e-4}{\newton} \)
+        
+        Energie entspricht der verrichteten Arbeit: \( W = F \cdot s \)
+        
+        \( W = \SI{5,0e-4}{N} \cdot \SI{2,0e-2}{m} = \SI{1,0e-5}{\joule} \)
+        
+        Vergleich mit: \( \frac{W}{q} = \frac{ \SI{1,0e-5}{\joule} }{\SI{1,0e-8}{\coulomb}}
+        =  \SI{1,0e3}{\volt} \)
+        
+        Stimmt mit der angegebenen Spannung U überein.
+        
+        \noindent\rule{10cm}{0.4pt} \\
+    }
+    
+\newproblem[3]{Ph_DornBader11_12S181A3}{
+\noindent
+    Ein Doppelspalt mit dem Mittenabstand \SI{8,8}{mm} \dots
+    }
+    {
+    
+    Aus \( \sin \alpha_k = \frac{k \cdot \lambda}{g} und \tan \alpha_k = \frac{d_{k}}{a} \)
+    gilt für kleine Winkel die Näherung \(\frac{k \cdot \lambda}{g} = \frac{d_k}{a} \).
+    
+    Der Abstand zweier Maxima ist dann
+    \(
+        (k+1) \frac{\lambda}{g} - k \frac{\lambda}{g} = \frac{d_{k+1} - d_k}{a} also
+        \frac{\lambda}{g} = \frac{d_{k+1}-d_k}{a}.
+    \)
+    
+    Der Abstand d zweier benachbarter Maxima ist
+    \[ d_{k+1} - d_k = d = \frac{a \cdot \lambda}{g} \] und damit die Wellenlänge
+    \[ \lambda = \frac{d \cdot g}{a} = \frac{\SI{3,04e-4}{m} \cdot \SI{8,0e-4}{m}}{\SI{0,5}{m}}
+    = \SI{486,4}{nm} \]
+    b) Etwa \SI{0,1}{mm}.
+    }
+
+
+\begin{document}
+
+\maketitle
+
+\section{Aufgabensammlung}
+
+\showanswers
+
+
+\useproblem{PH_DornBader11_12_S21A1}
+
+\useproblem{Ph_DornBader11_12S181A3}
+
+
+
+%\bibliographystyle{plain}
+%\bibliography{references}
+\end{document}
